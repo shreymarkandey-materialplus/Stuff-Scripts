@@ -1,0 +1,24 @@
+#### Create Policy In AWS lambda Role and attach this policy in that Lambda Role
+
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "automatedip",
+			"Effect": "Allow",
+			"Action": [
+				"ec2:AuthorizeSecurityGroupIngress",
+				"ec2:DescribeInstanceAttribute",
+				"ec2:DescribeInstanceStatus",
+				"ec2:DescribeInstances",
+				"ec2:RevokeSecurityGroupEgress",
+				"ec2:DescribeNetworkAcls",
+				"ec2:DescribeSecurityGroups",
+				"ec2:RevokeSecurityGroupIngress"
+			],
+			"Resource": [
+				"arn:aws:ec2:ap-southeast-2:626830599215:security-group/sg-0dd787441ab5f35e2"
+			]
+		}
+	]
+}

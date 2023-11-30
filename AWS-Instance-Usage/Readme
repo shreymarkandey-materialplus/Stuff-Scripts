@@ -1,0 +1,12 @@
+##### Prerequisites for running script for CPU #####
+1) make sure you have access key & secret key configured as default for profile you want to use.
+2) Python libraries to be preinstalled ie boto3 and openpyxl, configparser. If not installed install it via pip -r requirements.txt
+3) If you are collecting data for Longer time period make sure you take interval as more because get_metric_statstics API has a Limit of 1440 data points . Reference :- https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_GetMetricStatistics.html
+
+4) Default Duration is 4 months
+5) First Run Config.ini Script then edit the region in which you want to run the script
+6) At last just run the script.
+
+
+ 
+
